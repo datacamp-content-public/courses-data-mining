@@ -45,9 +45,25 @@ skills: 1
 
 `@solution`
 ```{r}
-Cus <- read.csv(file = "data/CustomerData.csv")
-dim(Cus); names(Cus); mean(Cus$DebtToIncomeRatio)
-mean(Cus$MaritalStatus=="Married")
+z <- c(1, 3, 5, 7)
+
+z + 2
+z * 2
+
+z2 <- c(2,4,6,8)
+
+z3 <- c(z, z2)
+z3
+A <- matrix(data = z3, nrow = 2, ncol = 4, byrow = T)
+
+t(A)
+t(A) %*% A
+
+A[1,]
+A[,3]
+A[2,3]
+A
+
 ```
 
 `@sct`
